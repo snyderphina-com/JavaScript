@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFELSESTATEMENT</title>
+</head>
+<body>
+   
+   <input type="number" id="potions" placeholder="Potions">
+<input type="number" id="gold" placeholder="Gold">
+<button onclick="checkout()">Buy</button>
+
+<p id="result"></p>
+
+<script>
+function checkout() {
+  let potions = Number(document.getElementById("potions").value);
+  let gold = Number(document.getElementById("gold").value);
+
+  let total = potions * 50;
+
+  document.getElementById("result").textContent =
+    gold >= total
+      ? `Transaction complete! You have ${gold - total} gold left.`
+      : "You are too poor for these potions!";
+}
+</script>
+</body>
+</html>
