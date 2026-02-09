@@ -12,14 +12,14 @@ let actualpocketmoneycash=pocketmoneycash-totalwithdrawfee;
 
 //(a) total income
 let totalincome=(earnings*weeks)+(pocketmoney*months);
-console.log(totalincome);
+console.log("Total income:ksh.",totalincome);
 
 //(b) actual cash
 let actualcash=earnings*weeks+actualpocketmoneycash;
-console.log(actualcash);
+console.log("Actual cash:ksh.",actualcash);
 
 //(c)
-//She has accumulated a fair price,another feww weeks will cover for the remaining amount
+//She has accumulated a fair price,another few weeks will cover for the remaining amount
 
 //(d)
 //Keep it up...

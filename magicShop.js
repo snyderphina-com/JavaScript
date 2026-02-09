@@ -14,7 +14,7 @@ rl.question("How many potions do you want? ", (potions) => {
    const remainder=gold-totalcost;
 
     if (gold >= potions * 50) {
-      console.log(`Transaction complete! you have ${remainder} in your account`);
+      console.log(`Transaction complete! you have ksh. ${remainder} in your account`);
     } else {
       console.log("You are too poor!");
     }
